@@ -8,6 +8,9 @@
     -->
     <!-- remote server -->
     <remote
+        name="github"
+        fetch="https://github.com" />
+    <remote
         name="lizhaoce905"
         fetch="https://github.com/lizhaoce905" />
 
