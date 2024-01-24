@@ -10,10 +10,6 @@
     <remote
         name="github"
         fetch="https://github.com" />
-    <remote
-        name="lizhaoce905"
-        fetch="https://github.com/lizhaoce905" />
-
     <!--
     default: 默认配置
     remote: 默认使用的远程仓库
@@ -21,7 +17,7 @@
     sync-j: 同步代码时的并发数
     -->
     <default
-        remote="lizhaoce905"
+        remote="github"
         revision="master"
         sync-j="1" />
 
@@ -36,6 +32,7 @@
 
     <!-- Volley -->
     <project
-        name="my_doc"
-        path="lib/Volley"/>
+        name="lizhaoce905/my_doc"
+        path="lib/Volley"
+        remote="github"/>
 </manifest>
