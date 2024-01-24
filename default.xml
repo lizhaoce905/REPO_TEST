@@ -30,7 +30,7 @@
     -->
     <!-- my_doc -->
     <project
-        name="lizhaoce905/my_doc"
-        path="lib/doc"
+        name="lizhaoce905/repo_lib"
+        path="lib/"
         revision="master" />
 </manifest>
