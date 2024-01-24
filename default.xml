@@ -9,7 +9,7 @@
     <!-- remote server -->
     <remote
         name="lizhaoce905"
-        fetch="https://github.com" />
+        fetch="https://github.com/lizhaoce905" />
 
     <!--
     default: 默认配置
@@ -18,7 +18,7 @@
     sync-j: 同步代码时的并发数
     -->
     <default
-        remote="github"
+        remote="lizhaoce905"
         revision="master"
         sync-j="1" />
 
@@ -33,6 +33,6 @@
 
     <!-- Volley -->
     <project
-        name="lizhaoce905/my_doc"
+        name="my_doc"
         path="lib/Volley"/>
 </manifest>
