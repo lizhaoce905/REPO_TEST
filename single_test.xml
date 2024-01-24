@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <manifest>
+  <remote fetch="https://github.com/nxp-auto-linux" name="alb"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://git.openembedded.org" name="oe"/>
+
+  <remote fetch="https://github.com/nxp-qoriq" name="qoriq"/>
+
+  <!-- The default revision and remote are applicable to the meta-alb layer -->
+  <default sync-j="2" revision="814fa233f9d5e4502090b38bd4a64d15650328e1" remote="alb"/>
+
+  <project name="meta-alb" path="sources/meta-alb">
+    <copyfile dest="nxp-setup-alb.sh"    src="nxp-setup-alb.sh"/>
+  </project>
+
+  <!-- projects below synchronized with default.xml in LFAC -->
+  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="6f04cf1fce13c9852d4ec86b66a3858c42b7c7c9"/>
+  <project name="meta-python2" path="sources/meta-openembedded/meta-python2" remote="oe" revision="f02882e2aa9279ca7becca8d0cedbffe88b5a253"/>
+  <project name="meta-security" path="sources/meta-security" remote="yocto" revision="d398cc6ea6716afd3a3a6e88ad8fbdc89510ef23"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="b3b3dbc67504e8cd498d6db202ddcf5a9dd26a9d"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="bdad2a789e30703a825b876279665720d06d55dc"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="f53ab3a2ff206a130cdc843839dd0ea5ec4ad02f"/>
+
+  <!-- projects below are not updated for gatesgarth -->
+  <project name="meta-qoriq" path="sources/meta-qoriq" remote="qoriq" revision="afaef5e29b0d5cb8a0f59c62bf9cbd44140b041e"/>
+
+  </manifest>
